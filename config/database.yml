@@ -1,0 +1,18 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: tcr_development
+
+test:
+  <<: *default
+  database: tcr_test
+
+production:
+  <<: *default
+  database: tcr_production
+  username: tcr
+  password: <%= ENV['TCR_DATABASE_PASSWORD'] %>
