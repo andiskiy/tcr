@@ -1,0 +1,8 @@
+= form_with url: dashboard_path, html: { method: :get, class: 'mt-5' } do |f|
+  .row
+    .col-9
+      = f.date_field :date, class: 'datepicker form-control'
+    .col-2
+      = f.submit 'Показать', class: 'btn btn-primary'
+
+canvas#myChart[width=950 height=550]
