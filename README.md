@@ -1,24 +1,33 @@
-# README
+# TCR
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is Tinkoff Currency Rates. App builds a chart of changes in rates.
+## Used technologies
 
-Things you may want to cover:
+* Rails 6.0.2.1
+* Ruby 2.6.5
+* PostgreSQL
+* Puma
+* [Chart.js](https://github.com/chartjs/Chart.js)
 
-* Ruby version
+## Getting Started
 
-* System dependencies
+Install [RVM](https://rvm.io/) with Ruby 2.6.5.
 
-* Configuration
+Install gems:
+```
+gem install bundler
+bundle install
+```
 
-* Database creation
+##### Install DB
 
-* Database initialization
+```
+rake db:create
+rake db:migrate
+```
 
-* How to run the test suite
+Just fill in 5 points:
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+rake db:seed
+```
