@@ -11,7 +11,7 @@ module Tinkoff
 
         create_currency_rates
       rescue StandardError => e
-        raise e, "Message - #{e}; rate - #{rate}"
+        puts "Message - #{e}; rate - #{rate}"
       end
     end
 

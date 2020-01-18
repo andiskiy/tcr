@@ -33,6 +33,7 @@ gem 'bootsnap', '>= 1.4.2', require: false
 gem 'reform-rails'
 gem 'rest-client'
 gem 'slim'
+gem 'whenever', require: false
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
