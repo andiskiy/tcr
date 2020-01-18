@@ -13,6 +13,7 @@ module Tcr
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.0
 
+    config.autoload_paths << Rails.root.join('lib', 'services')
     config.i18n.default_locale = :ru
     config.time_zone = 'Moscow'
 
